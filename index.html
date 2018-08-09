@@ -31,11 +31,21 @@
     <input type="url" name="imgUrl" placeholder="Image Link" required>
     <button type="submit">Add Home</button>
   </form>
+  <form onsubmit="app.controllers.jobsController.addJob(event)">
+    <label for="title">Title</label>
+    <input type="text" name="title" placeholder="title" required>
+    <input type="text" name="salary" placeholder="salary" required>
+    <input type="text" name="yearsEdReq" placeholder="5" required>
+
+    <button type="submit">Add Job</button>
+  </form>
+
 
   <div class="container">
     <div id="homes" class="row"></div>
-    <div id="cars" class="row">
-      <!-- <div class="col-3">
+    <div id="cars" class="row"></div>
+    <div id="jobs" class="row"></div>
+    <!-- <div class="col-3">
         <p>${car.make}</p>
         <p>${car.model}</p>
         <p>${car.price}</p>
@@ -43,7 +53,8 @@
         <p>${car.color}</p>
         <img src="${car.imgUrl}" alt="somethingelse">
       </div> -->
-    </div>
+
+
   </div>
 
 

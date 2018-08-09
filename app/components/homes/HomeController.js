@@ -9,11 +9,11 @@ function drawHomes() {
     const home = homes[i];
     template += `
     <div style="outline: 1px solid black" class="col-3">
-        <p>Make: ${home.make}</p>
-        <p>${home.model}</p>
-        <p>${home.price}</p>
+        
+        <p>${home.bedrooms}</p>
+        <p>${home.bathrooms}</p>
         <p>${home.year}</p>
-        <p>${home.color}</p>
+        <p>${home.price}</p>
         <img src="${home.imgUrl}" alt="somethingelse">
     </div>
     `
