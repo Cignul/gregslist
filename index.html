@@ -13,9 +13,8 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-{breakpoint}-auto">
-        <form type="text" placeholder="." onsubmit="app.controllers.carController.addCar(event)">
-          <label for="make">Make</label>
+      <div class="col">
+        <form type="text" placeholder="" onsubmit="app.controllers.carController.addCar(event)">
           <input type="text" name="make" placeholder="Make" required>
           <input type="text" name="model" placeholder="Model" required>
           <input type="number" name="year" placeholder="Year" value="2000" required>
@@ -26,33 +25,32 @@
         </form>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <form input class="form-control " type="text" placeholder="." onsubmit="app.controllers.homeController.addHome(event)">
-        <label for="bedrooms">Bedrooms</label>
-        <input type="text" name="bedrooms" placeholder="bedrooms" required>
-        <input type="text" name="bathrooms" placeholder="bathrooms" required>
-        <input type="number" name="year" placeholder="Year" value="1970" required>
-        <input type="text" name="price" placeholder="Price" value="100000" required>
-        <input type="url" name="imgUrl" placeholder="Image Link" required>
-        <button type="submit">Add Home</button>
+    <div class="row">
+      <div class="col">
+        <form type="text" placeholder="." onsubmit="app.controllers.homeController.addHome(event)">
+          <input type="text" name="bedrooms" placeholder="bedrooms" required>
+          <input type="text" name="bathrooms" placeholder="bathrooms" required>
+          <input type="number" name="year" placeholder="Year" value="1970" required>
+          <input type="text" name="price" placeholder="Price" value="100000" required>
+          <input type="url" name="imgUrl" placeholder="Image Link" required>
+          <button type="submit">Add Home</button>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12">
-      </form>
-      <form input class="form-control " type="text" placeholder="." onsubmit="app.controllers.jobsController.addJob(event)">
-        <label for="title">Title</label>
-        <input type="text" name="title" placeholder="title" required>
-        <input type="text" name="salary" placeholder="salary" required>
-        <input type="text" name="yearsEdReq" placeholder="5" required>
-        <button type="submit">Add Job</button>
+    <div class="row">
+      <div class="col">
+        </form>
+        <form type="text" placeholder="." onsubmit="app.controllers.jobsController.addJob(event)">
+          <label for="title">Title</label>
+          <input type="text" name="title" placeholder="title" required>
+          <input type="text" name="salary" placeholder="salary" required>
+          <input type="text" name="yearsEdReq" placeholder="5" required>
+          <button type="submit">Add Job</button>
+      </div>
     </div>
-  </div>
 
-  </form>
+    </form>
+  </div>
 
   <div class="container">
     <div id="homes" class="row"></div>
