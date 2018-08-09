@@ -19,11 +19,21 @@
     <input type="number" name="year" placeholder="Year" value="2000" required>
     <input type="text" name="price" placeholder="Price" required>
     <input type="text" name="color" placeholder="Color" required>
-    <input type="url" name="imgUrl" placeholder="Image Link" required>
+    <input type="url" name="imgUrl" src="https://placehold.it/200x200" placeholder="https://placehold.it/200x200" required>
     <button type="submit">Add Car</button>
+  </form>
+  <form onsubmit="app.controllers.homeController.addHome(event)">
+    <label for="bedrooms">Bedrooms</label>
+    <input type="text" name="bedrooms" placeholder="bedrooms" required>
+    <input type="text" name="bathrooms" placeholder="bathrooms" required>
+    <input type="number" name="year" placeholder="Year" value="1970" required>
+    <input type="text" name="price" placeholder="Price" value="100000" required>
+    <input type="url" name="imgUrl" placeholder="Image Link" required>
+    <button type="submit">Add Home</button>
   </form>
 
   <div class="container">
+    <div id="homes" class="row"></div>
     <div id="cars" class="row">
       <!-- <div class="col-3">
         <p>${car.make}</p>
@@ -35,6 +45,7 @@
       </div> -->
     </div>
   </div>
+
 
 
   <script src="main.js" type="module"></script>
